@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Store</title>
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="contact-info">
+                <p><span class="icon">&#9742;</span> +254 721 478659</p>
+                <p><span class="icon">&#9993;</span> <a href="mailto:kevinmainatech@gmail.com">kevinmainatech@gmail.com</a></p>
+                <p><span class="icon">&#127968;</span> Nairobi, Kenya</p>
+            </div>
+            <div class="social-links">
+                <a href="https://www.facebook.com/share/QrY1fsvP9Hnyv2bF/?mibextid=qi2Omg"><img src="images/facebook.png" alt="Facebook"></a>
+                <a href="https://wa.me/254721478659"><img src="images/watsapp.png" alt="WhatsApp"></a>
+                <a href="https://www.tiktok.com/@vintech5?_t=8p1n3ets7rJ&_r=1"><img src="images/tiktok.png" alt="TikTok"></a>
+                <a href="https://www.instagram.com/vintech_waterproofing?igsh=MThxYzViNWlvNjA1bQ=="><img src="images/instagram.png" alt="instagram"></a>
+                <a href="https://www.linkedin.com/in/vintech-construction-003451195?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><img src="images/linkedin.png" alt="LinkedIn"></a>
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-content">
+            <div class="logo">
+                <img src="images/companylogo.png" alt="Company Logo">
+                <div class="company-name">
+                    <p class="name-row main-name">VINTECH</p>
+                    <p class="name-row sub-name">Construction Waterproofing</p>
+                </div>
+            </div>
+            <div class="hamburger">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <div class="dropdown product-dropdown">
+                    <button class="dropbtn">Shop By Category <i class="fa fa-caret-down"></i></button>
+                    <div class="p-dropdown-content">
+                        <a href="#waterproofing" data-category="waterproofing">Waterproofing</a>
+                        <a href="#admixtures" data-category="admixtures">Admixtures</a>
+                        <a href="#concrete-repair" data-category="concrete-repair">Concrete Repair Solutions</a>
+                        <a href="#adhesives" data-category="adhesives">Adhesives</a>
+                        <a href="#anchors&grouts" data-category="anchors&grouts">Chemical Anchors and Grouts</a>
+                        <a href="#protective-coatings" data-category="protective-coatings">Protective Coatings</a>
+                        <a href="#joint-sealers" data-category="joint-sealers">Joint Sealers</a>
+                        <a href="#bonding-agents" data-category="bonding-agents">Bonding Agents</a>
+                        <a href="#waterplugs" data-category="waterplugs">Water Plugs</a>
+                        <a href="#epoxy-flooring" data-category="epoxy-flooring">Epoxy Flooring</a>
+                        <a href="#polyurethane-flooring" data-category="polyurethane-flooring">Polyurethane Flooring</a>
+                    </div>
+                </div>
+                <a href="shop.html">Store</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+            <div class="search-container">
+                <input type="text" placeholder="Search Product..." name="search">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </nav>
+   
+    <!-- Aside section -->
+    <div class="shop-container">
+        <aside class="sidebar">
+            <h2>Product Categories</h2>
+            <ul>
+                <li><a href="#" data-category="all">All</a></li>
+                <li><a href="#" data-category="waterproofing">Waterproofing</a></li>
+                <li><a href="#" data-category="admixtures">Admixtures</a></li>
+                <li><a href="#" data-category="concrete-repair">Concrete Repair Solutions</a></li>
+                <li><a href="#" data-category="adhesives">Adhesives</a></li>
+                <li><a href="#" data-category="anchors&grouts">Chemical Anchors and Grouts</a></li>
+                <li><a href="#" data-category="protective-coatings">Protective Coatings</a></li>
+                <li><a href="#" data-category="joint-sealers">Joint Sealers</a></li>
+                <li><a href="#" data-category="bonding-agents">Bonding Agents</a></li>
+                <li><a href="#" data-category="waterplugs">Water Plugs</a></li>
+                <li><a href="#" data-category="epoxy-flooring">Epoxy Flooring</a></li>
+                <li><a href="#" data-category="polyurethane-flooring">Polyurethane Flooring</a></li>
+            </ul>
+            <!-- <h3>Product Status</h3>
+            <ul>
+                <li><a href="#">In Stock</a></li>
+                <li><a href="#">On Sale</a></li>
+            </ul> -->
+        </aside>
+
+        <!-- Products -->
+        <section class="products">
+            <!-- Waterproofing -->
+            <div class="product-item" data-category="waterproofing">
+                <img src="products_images/appmembrane.jpeg" alt="APP Membrane">
+                <h3>APP Membrane</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="app-membrane-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="waterproofing">
+                <img src="products_images/waterbars.jpeg" alt="waterbars">
+                <h3>Waterbars</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="waterbars-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+
+            <div class="product-item" data-category="waterproofing">
+                <img src="products_images/planiseal 88.png" alt="planiseal 88">
+                <h3>Planiseal 88</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="planiseal-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="waterproofing">
+                <img src="products_images/mapelastic smart.png" alt="mapelastic smart">
+                <h3>Mapelastic Smart</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="msmart-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="waterproofing">
+                <img src="products_images/hydro ban.png" alt="hydro ban">
+                <h3>Hydro Ban</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="hydro-ban-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="waterproofing">
+                <img src="products_images/aqua barrier.png" alt="aqua barrier">
+                <h3>Laticrete Aqua Barrier</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="aqua-barrier-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <!-- Admixtures -->
+            <div class="product-item" data-category="admixtures">
+                <img src="products_images/polyplus-cp.png" alt="Polyplus CP">
+                <h3>Dr. Fixit Polyplus CP</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="polyplus-cp-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="admixtures">
+                <img src="products_images/Pidiproof lw.png" alt="Pidiproof LW+">
+                <h3>Dr. Fixit Pidiproof LW+</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="pidiproof-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="admixtures">
+                <img src="products_images/Sika-1.jpeg" alt="Sika-1">
+                <h3>Sika-1</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="sika-1-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="admixtures">
+                <img src="products_images/Sikalite.jpeg" alt="Sikalite">
+                <h3>SikaLite</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="sikalite-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+
+            <!-- Concrete Repair -->
+            <div class="product-item" data-category="concrete-repair">
+                <img src="products_images/Adisilex PG4.jpeg" alt="Adisilex PG4">
+                <h3>Mapei Adisilex PG4</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="adisilex-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="concrete-repair">
+                <img src="products_images/Sika AchorFix 3001.jpeg" alt="Sika Achorfix 3001">
+                <h3>Sika Achorfix 3001</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="sachorfix-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <!-- ADHESIVES -->
+            <div class="product-item" data-category="adhesives">
+                <img src="products_images/SikaCeram-105.jpeg" alt="SikaCeram-105">
+                <h3>SikaCeram-105</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="sikaceram-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="adhesives">
+                <img src="products_images/Dr.F Tie adhesive.png" alt="Tile adhesive">
+                <h3>Modern Tile Adhesive</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="tile-adhesive-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="adhesives">
+                <img src="products_images/Adisilex p7.png" alt="adesilex p7">
+                <h3>Adesilex P7</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="adisilex-p7-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="adhesives">
+                <img src="products_images/315 tile adhesive.png" alt="315 tile adhesive">
+                <h3>315 Tile Adhesive</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="315-adhesive-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <!-- Ancors&grouts -->
+            <div class="product-item" data-category="anchors&grouts">
+                <img src="products_images/D-tilegrout.png" alt="grout">
+                <h3>Dr. Fixit Tile Grout</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="dtile-grout-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="anchors&grouts">
+                <img src="products_images/kerapoxy.png" alt="kerapoxy">
+                <h3>Kerapoxy</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="kerapoxy-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="anchors&grouts">
+                <img src="products_images/Ultracolor plus.png" alt="ultracolor plus">
+                <h3>Ultracolor Plus</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="ultracolor-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="anchors&grouts">
+                <img src="products_images/1600 unsanded grout.png" alt="1600 unsanded grout">
+                <h3>1600 Unsanded Grout</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="1600-grout-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="anchors&grouts">
+                <img src="products_images/1776 grout.png" alt="1776 grout">
+                <h3>1776 Grout Admix Plus</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="1776-admix-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <!-- protective coatings -->
+            <div class="product-item" data-category="protective-coatings">
+                <img src="products_images/Mapelastic Easy.jpeg" alt="Mapelastic Easy">
+                <h3>Mapelastic Easy</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="measy-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="protective-coatings">
+                <img src="products_images/Topseal 107.jpeg" alt="Topseal 107">
+                <h3>Sika Topseal 107</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="topseal-107-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="protective-coatings">
+                <img src="products_images/Moyaproof WS2.jpeg" alt="Moyaproof WS2">
+                <h3>Moyaproof WS2</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="moyaproof-ws2-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="protective-coatings">
+                <img src="products_images/Nitocote CM210.jpeg" alt="Nitocote CM210">
+                <h3>Nitocote CM210</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="nitocote-cm210-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="protective-coatings">
+                <img src="products_images/Moyashield Uflex 100.jpeg" alt="Moyashield Uflex 100">
+                <h3>Moyashield Uflex 100</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="moyashield-uflex-100-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="protective-coatings">
+                <img src="products_images/Uniproof 4000.jpeg" alt="Uniproof 4000">
+                <h3>Uniproof 4000</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="uniproof-4000-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="protective-coatings">
+                <img src="products_images/fastfex.png" alt="fastflex">
+                <h3>Fastflex</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="fastflex-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <!-- Joint Sealers -->
+            <div class="product-item" data-category="joint-sealers">
+                <img src="products_images/pu-sealant.png" alt="PU Sealant">
+                <h3>Dr. Fixit PU Sealant</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="pu-sealant-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="joint-sealers">
+                <img src="products_images/mapesil.png" alt="Mapesil">
+                <h3>Mapesil</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="mapesil-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            
+            <!-- Bonding Agents -->
+            <div class="product-item" data-category="bonding-agents">
+                <img src="products_images/SikaLatex.jpeg" alt="Sikalatex">
+                <h3>SikaLatex</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="sikalatex-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <div class="product-item" data-category="bonding-agents">
+                <img src="products_images/superlatex.png" alt="Super latex">
+                <h3>Super Latex</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="super-latex-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <!-- Water Plugs -->
+            <div class="product-item" data-category="waterplugs">
+                <img src="products_images/leak plug.png" alt="Instant Leak plug">
+                <h3>Dr. Fixit Instant Leak Plug</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="leak-plug-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <!-- Epoxy Flooring -->
+            <div class="product-item" data-category="epoxy-flooring">
+                <img src="products_images/Resigard PU-Clear.jpeg" alt="Resigard PU Clear">
+                <h3>Resigard PU-Clear</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn" data-modal="resigard-pu-clear-modal">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            <!-- polyurethane flooring -->
+            <div class="product-item" data-category="polyurethane-flooring">
+                <img src="products_images/polyuthane clear vanish.png" alt="polyuthane wood vanish">
+                <h3>Woodseal Polyuthane Clear Vanish</h3>
+                <div class="button-container">
+                    <a href="#" class="btn read-more-btn">Read More</a>
+                    <a href="https://wa.me/254721478659" class="btn order-btn">Order Now</a>
+                </div>
+            </div>
+            
+            <!-- Modal structure -->
+            <div id="app-membrane-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="app-membrane-modal">&times;</span>
+                    <h3>APP Membrane</h3>
+                    <p>A polymer-modified bitumen membrane used for waterproofing applications, providing durability and resistance to weather elements.</p>
+                    <p><strong>Packaging:</strong> 20 kg rolls</p>
+                    <p><strong>Coverage:</strong> 1 roll covers approximately 50 m²</p>
+                </div>
+            </div>
+            <div id="waterbars-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="waterbars-modal">&times;</span>
+                    <h3>Waterbars</h3>
+                    <p>A flexible and waterproof material used in construction joints to prevent water infiltration and ensure structural integrity.</p>
+                    <p><strong>Packaging:</strong> 30 m rolls</p>
+                    <p><strong>Coverage:</strong> 1 roll covers approximately 30 m of joint</p>
+                </div>
+            </div>
+            <div id="planiseal-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="planiseal-modal">&times;</span>
+                    <h3>Planiseal 88</h3>
+                    <p>Osmotic cementitious mortar suitable for contact with drinking water, for waterproofing masonry and concrete structures.</p>
+                    <p><strong>Packaging:</strong> 20 kg bags</p>
+                    <p><strong>Coverage:</strong> 1 bag covers approximately 20 m²</p>
+                </div>
+            </div>
+            <div id="msmart-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="msmart-modal">&times;</span>
+                    <h3>Mapelastic Smart</h3>
+                    <p>A two-component flexible cementitious mortar ideal for waterproofing wet areas e.g balconies, bathrooms etc.</p>
+                    <p><strong>Packaging:</strong> 30 kg kits(20kg bag of component A & 10kg drum of component B)</p>
+                    <p><strong>Coverage:</strong> 1 kit covers approximately 30 m²</p>
+                </div>
+            </div>
+            <div id="hydro-ban-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="hydro-ban-modal">&times;</span>
+                    <h3>Laticrete Hydro Ban</h3>
+                    <p>A thin, load-bearing waterproofing/crack isolation membrane for use in wet areas, offering excellent moisture control and durability.</p>
+                    <p><strong>Packaging:</strong> 18.9L bucket</p>
+                    <p><strong>Coverage:</strong> 1 bucket covers approximately 30 m²</p>
+                </div>
+            </div>
+            <div id="aqua-barrier-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="aqua-barrier-modal">&times;</span>
+                    <h3>Laticrete Aqua Barrier</h3>
+                    <p>A waterproofing and crack isolation membrane designed for use in wet areas, providing long-lasting protection.</p>
+                    <p><strong>Packaging:</strong> 20 kg bag + 8L bucket</p>
+                    <p><strong>Coverage:</strong> 1 kit covers approximately 25 m²</p>
+                </div>
+            </div>
+            <div id="polyplus-cp-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="polyplus-cp-modal">&times;</span>
+                    <h3>Dr. Fixit Polyplus CP</h3>
+                    <p>A cementitious cystalline waterproofing coating designed for exterior surfaces, providing a strong barrier against moisture ingress.</p>
+                    <p><strong>Packaging:</strong> 25 kg pail</p>
+                    <p><strong>Coverage:</strong> 1.5kg per sq mtr in 2 coats.</p>
+                </div>
+            </div>
+            
+            <div id="pidiproof-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="pidiproof-modal">&times;</span>
+                    <h3>Dr. Fixit Pidiproof LW+</h3>
+                    <p>A liquid waterproofing treatment for roofs and balconies, offering high flexibility and protection against ponding water.</p>
+                    <p><strong>Packaging:</strong> 200ml, 1,5,10,100Ltr.</p>
+                    <p><strong>Coverage:</strong> 200ml per 50kg bag of cement.</p>
+                </div>
+            </div>
+            <div id="sika-1-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="sika-1-modal">&times;</span>
+                    <h3>Sika-1</h3>
+                    <p>A waterproofing admixture for concrete and mortar, enhancing water resistance and durability.</p>
+                    <p><strong>Packaging:</strong> 5,20,25 Ltr pails & 200L drums</p>
+                    <p><strong>Coverage:</strong> -3% by weight of cement</p>
+                </div>
+            </div>
+            <div id="sikalite-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="sikalite-modal">&times;</span>
+                    <h3>Sikalite</h3>
+                    <p>A powdered waterproofing agent for cement-based mixes, providing enhanced protection against moisture.</p>
+                    <p><strong>Packaging:</strong> 1kg bags</p>
+                    <p><strong>Coverage:</strong> 1kg per 1 bag of cement</p>
+                </div>
+            </div>
+            <div id="adisilex-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="adisilex-modal">&times;</span>
+                    <h3>Mapei Adesilex PG4</h3>
+                    <p>A high-performance adhesive for tiles and ceramics, offering strong bond strength and flexibility.</p>
+                    <p><strong>Packaging:</strong> 25 kg bags</p>
+                    <p><strong>Coverage:</strong> 1 bag covers approximately 70 m²</p>
+                </div>
+            </div>
+            <div id="sachorfix-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="sachorfix-modal">&times;</span>
+                    <h3>Sika Achorfix 3001</h3>
+                    <p>A specialized adhesive for anchoring and bonding, designed for heavy loads and structural applications.</p>
+                    <p><strong>Packaging:</strong> 300 ml cartridges</p>
+                    <p><strong>Coverage:</strong> 1 cartridge covers approximately 10 m of joint</p>
+                </div>
+            </div>
+            <div id="sikaceram-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="sikaceram-modal">&times;</span>
+                    <h3>SikaCeram 105</h3>
+                    <p>A cement-based adhesive for wall and floor tiles, providing excellent adhesion and moisture resistance.</p>
+                    <p><strong>Packaging:</strong> 25 kg bags</p>
+                    <p><strong>Coverage:</strong> 1 bag covers approximately 80 m²(4-5kg per m²)</p>
+                </div>
+            </div>
+            <div id="tile-adhesive-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="tile-adhesive-modal">&times;</span>
+                    <h3>Dr. Fixit Modern Tile Adhesive</h3>
+                    <p>A high-strength adhesive for modern tiles, providing excellent bond strength and water resistance.</p>
+                    <p><strong>Packaging:</strong> 25kg bags</p>
+                    <p><strong>Coverage:</strong> 4.5 to 5 kg/m² for 25kg bag.</p>
+                </div>
+            </div>
+            <div id="adisilex-p7-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="adisilex-p7-modal">&times;</span>
+                    <h3>Mapei Adesilex P7</h3>
+                    <p>A high-performance cementitious adhesive designed for demanding applications, providing excellent flexibility and adhesion for both wall and floor tiles.</p>
+                    <p><strong>Packaging:</strong> 25 kg bags</p>
+                    <p><strong>Coverage:</strong> 1 bag covers approximately 75 m²</p>
+                </div>
+            </div>
+            <div id="315-adhesive-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="315-adhesive-modal">&times;</span>
+                    <h3>Laticrete 315 Tile Adhesive</h3>
+                    <p>A versatile thin-set adhesive for tiles, designed for interior and exterior applications with high bond strength. Combined with water or latex additive.</p>
+                    <p><strong>Packaging:</strong> 25 kg bags</p>
+                    <p><strong>Coverage:</strong> 1 bag covers approximately 80 m²</p>
+                </div>
+            </div>
+            <div id="dtile-grout-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="dtile-grout-modal">&times;</span>
+                    <h3>Dr. Fixit Tile Grout</h3>
+                    <p>A cement-based grout for tile joints, providing excellent water resistance and durability in wet areas.</p>
+                    <p><strong>Packaging:</strong> 1kg&3kg bags</p>
+                    <p><strong>Coverage:</strong> 2-2.5m²/1kg in two coats.</p>
+                </div>
+            </div>
+            <div id="kerapoxy-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="kerapoxy-modal">&times;</span>
+                    <h3>Mapei Kerapoxy</h3>
+                    <p>A high-performance, two-component epoxy grout for tiles, offering superior strength and chemical resistance, ideal for demanding environments.</p>
+                    <p><strong>Packaging:</strong> 10 kg packs</p>
+                    <p><strong>Coverage:</strong> 1 pack covers approximately 20 m²</p>
+                </div>
+            </div>
+            <div id="ultracolor-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="ultracolor-modal">&times;</span>
+                    <h3>Mapei Ultracolor Plus</h3>
+                    <p>A ready-to-use polymer-modified grout for tile joints, providing quick drying and high resistance to cracking and moisture.</p>
+                    <p><strong>Packaging:</strong> 4*5kg boxes</p>
+                    <p><strong>Coverage:</strong> 1 bag covers approximately 40 m²</p>
+                </div>
+            </div>
+            <div id="1600-grout-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="1600-grout-modal">&times;</span>
+                    <h3>Laticrete 1600 Unsanded Grout</h3>
+                    <p>A premium, factory prepared, polymer fortified unsanded portland cement grout for narrow joints(3mm or less) in ceramic tile applications, offering high strength and excellent color consistency.</p>
+                    <p><strong>Packaging:</strong> 3kg bags</p>
+                    <p><strong>Coverage:</strong> 1 bag covers approximately 40 m²</p>
+                </div>
+            </div>
+            <div id="1776-admix-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="1776-admix-modal">&times;</span>
+                    <h3>1776 Grout Admix Plus</h3>
+                    <p>A specially formulated grout admix that enhances the bonding properties and flexibility of grout for improved performance. Used in place of water with 1500 & 1600 series of grouts.</p>
+                    <p><strong>Packaging:</strong> 20L pail.</p>
+                    <p><strong>Coverage:</strong> Varies based on grout mix ratio.</p>
+                </div>
+            </div>
+            <div id="measy-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="measy-modal">&times;</span>
+                    <h3>Mapelastic Easy</h3>
+                    <p>A flexible waterproofing membrane that is easy to apply and provides excellent protection against moisture ingress in various applications.</p>
+                    <p><strong>Packaging:</strong> 20 kg bucket.</p>
+                    <p><strong>Coverage:</strong> Covers approximately 12 m².</p>
+                </div>
+            </div>
+            <div id="topseal-107-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="topseal-107-modal">&times;</span>
+                    <h3>Sika Topseal 107</h3>
+                    <p>A high-performance waterproofing membrane that is applied as a liquid and cures to form a seamless, durable layer.</p>
+                    <p><strong>Packaging:</strong> 25 kg units(A+B).</p>
+                    <p><strong>Coverage:</strong> Covers approximately 10 m².</p>
+                </div>
+            </div>
+            <div id="moyaproof-ws2-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="moyaproof-ws2-modal">&times;</span>
+                    <h3>Moyaproof WS2</h3>
+                    <p>A water-based waterproofing membrane that is easy to apply and provides excellent adhesion to various substrates.</p>
+                    <p><strong>Packaging:</strong> 20kg units.</p>
+                    <p><strong>Coverage:</strong> Covers approximately 8m².</p>
+                </div>
+            </div>
+            <div id="nitocote-cm210-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="nitocote-cm210-modal">&times;</span>
+                    <h3>Nitocote CM210</h3>
+                    <p>A cementitious waterproofing compound that provides a durable barrier against water and moisture penetration.</p>
+                    <p><strong>Packaging:</strong> 25kg bucket.</p>
+                    <p><strong>Coverage:</strong> Covers approximately 20m².</p>
+                </div>
+            </div>
+            <div id="moyashield-uflex-100-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="moyashield-uflex-100-modal">&times;</span>
+                    <h3>Moyashield Uflex 100</h3>
+                    <p>A flexible, liquid-applied waterproofing membrane ideal for various surfaces, providing reliable waterproof protection.</p>
+                    <p><strong>Packaging:</strong> 20kg bucket.</p>
+                    <p><strong>Coverage:</strong> Covers approximately 20m².</p>
+                </div>
+            </div>
+            <div id="uniproof-4000-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="uniproof-4000-modal">&times;</span>
+                    <h3>Uniproof 4000</h3>
+                    <p>A high-performance liquid membrane that provides waterproofing and protection against moisture ingress.</p>
+                    <p><strong>Packaging:</strong> 25kg bucket.</p>
+                    <p><strong>Coverage:</strong> Covers approximately 20m².</p>
+                </div>
+            </div>
+            <div id="fastflex-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="fastflex-modal">&times;</span>
+                    <h3>Fastflex</h3>
+                    <p>A high performance polymer modified cementitious coating ideal for waterproofing and sealing joints, cracks, and other openings.</p>
+                    <p><strong>Packaging:</strong> 12kg & 48kg.</p>
+                    <p><strong>Coverage:</strong> 0.5m² in 2 coats at 1.2mm DFT.</p>
+                </div>
+            </div>
+            <div id="pu-sealant-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="pu-sealant-modal">&times;</span>
+                    <h3>Dr. Fixit PU Sealant</h3>
+                    <p>A polyurethane-based sealant that provides excellent adhesion and flexibility for sealing joints and gaps.</p>
+                    <p><strong>Packaging:</strong> 600ml sausage.</p>
+                    <p><strong>Coverage:</strong> Covers approximately 12m of joint.</p>
+                </div>
+            </div>
+            <div id="mapesil-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="mapesil-modal">&times;</span>
+                    <h3>Mapesil</h3>
+                    <p>A silicone sealant designed for use in bathrooms and kitchens, providing excellent waterproofing and mildew resistance.</p>
+                    <p><strong>Packaging:</strong> 300ml cartridge.</p>
+                    <p><strong>Coverage:</strong> Covers approximately 12m of joint.</p>
+                </div>
+            </div>
+            <div id="sikalatex-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="sikalatex-modal">&times;</span>
+                    <h3>Sikalatex</h3>
+                    <p>A latex-based additive for cementitious mixtures, enhancing bonding strength and flexibility.</p>
+                    <p><strong>Packaging:</strong> 1,2,5 & 20L pails.</p>
+                    <p><strong>Coverage:</strong> Varies based on application.</p>
+                </div>
+            </div>
+            <div id="super-latex-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="super-latex-modal">&times;</span>
+                    <h3>Super Latex</h3>
+                    <p>A high-performance latex additive for improving the performance of cementitious mixes and enhancing flexibility.</p>
+                    <p><strong>Packaging:</strong> 1, 5 & 20kg units.</p>
+                    <p><strong>Coverage:</strong> Varies based on application.</p>
+                </div>
+            </div>
+            <div id="resigard-pu-clear-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="resigard-pu-clear-modal">&times;</span>
+                    <h3>Resigard PU Clear</h3>
+                    <p>A UV-resistant polyurethane coating used for protective applications on marine structures, pharmaceutical units, and more.</p>
+                    <p><strong>Packaging:</strong> 20-liter container.</p>
+                    <p><strong>Coverage:</strong> Covers approximately 5 to 8 m² per liter, depending on surface porosity.</p>
+                </div>
+            </div>
+            <div id="leak-plug-modal" class="modal">
+                <div class="modal-content">
+                    <span class="close" data-modal="leak-plug-modal">&times;</span>
+                    <h3>Dr. Fixit Instant Leak Plug</h3>
+                    <p>A fast-setting waterproofing compound for immediate repairs of leaks and cracks in various substrates.</p>
+                    <p><strong>Packaging:</strong> 1 kg tubs</p>
+                    <p><strong>Coverage:</strong> 1 tub is suitable for approximately 5-10 m² of repair area</p>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Vintech Construction Waterproofing. All rights reserved.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>

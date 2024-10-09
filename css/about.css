@@ -1,0 +1,625 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+h2 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    text-align: center;
+}
+/* Header */
+header {
+    background-color: violet;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #ddd;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    margin-right: 2px;
+}
+
+.logo img {
+    height: 100px;
+    width: 100px;
+    margin-right: 1px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.company-name .main-name {
+    font-size: 25px; 
+    margin: 0; 
+}
+
+.company-name .sub-name {
+    font-size: 12px; 
+    margin: 0;
+}
+
+.company-name {
+    font-weight: bold;
+    color: blue;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1.2;
+}
+
+
+
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+    text-align: right;
+}
+
+.contact-info p {
+    margin: 0 15px;
+    font-size: 14px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.social-links a:hover {
+    text-decoration-color: darkblue;
+}
+
+.social-links img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+/* Navigation */
+nav {
+    background-color: whitesmoke;
+    padding: 10px;
+    margin-top: 40px;
+    width: 100%;
+    position: fixed;
+    z-index: 99;
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav a {
+    color: black;
+    text-decoration: none;
+    margin-right: 60px;
+    font-size: 16px;
+}
+
+nav a:hover {
+    color: rgb(187, 7, 187); 
+    transition: color 0.3s ease;
+}
+
+.nav-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    color: black;
+    padding: 14px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    width: 100%;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 100%; 
+    box-sizing: border-box; 
+    border-bottom: 1px solid grey; 
+}
+
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: lightgreen;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+    width: 180%;
+}
+
+
+/* Main Content Section */
+main {
+    flex: 1;
+    padding-top: 60px; /* Adjust to clear the fixed navigation */
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 80vh;
+    background-color: #f0f0f0; /* Fallback color */
+    overflow: hidden;
+}
+
+.hero-section .hero-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-section .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    animation: fadeIn 2s ease-in-out;
+    filter: brightness(70%); /* Darken the image for better text visibility */
+}
+
+.hero-section .hero-text {
+    position: absolute;
+    color: #fff;
+    text-align: center;
+    padding: 0 20px;
+    z-index: 2;
+}
+
+.hero-section .hero-text h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.hero-section .hero-text p {
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+
+/* Image Animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(1.1);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+
+/* About Us Section */
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(255, 255, 255);
+}
+
+.about-content img.about-image {
+    width: auto;
+    height: 350px;
+    border-radius: 4px;
+    margin-top: 12vh;
+}
+
+.about-content div.texts-content {
+    padding: 40px;
+}
+
+.texts-content h1 {
+    font-size: 2.2em;
+    color: blue;
+    margin-bottom: 10px;
+}
+
+
+.texts-content p {
+    font-size: 1.2em;
+    color: #7e7c7c;
+    line-height: 1.2;
+    margin-bottom: 1px;
+    text-align: left;
+    
+}
+
+
+/* Our Value Proposition Section */
+.our-value-proposition {
+    background-color: white;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.our-value-proposition h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: blue;
+}
+
+.our-value-proposition .reason {
+    display: inline-block;
+    width: 22%;
+    margin: 0 1%;
+    vertical-align: top;
+    text-align: center;
+}
+
+.our-value-proposition .reason i {
+    font-size: 2em;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.our-value-proposition .reason h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.our-value-proposition .reason p {
+    font-size: 1em;
+    color: #666;
+    text-align: center;
+}
+
+/* Mission and Vision Section */
+.mission-vision {
+    background-color: violet;
+    padding: 50px 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.mission-vision .mission,
+.mission-vision .core-values,
+.mission-vision .vision {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+  
+}
+
+.mission-vision ul {
+    font-size: 1.2em;
+    color: #444;
+    line-height: 1.6;
+    text-align: left;
+    display: inline-block;
+}
+
+.mission-vision .mission,
+.mission-vision .vision {
+    border-right: 2px solid black;
+}
+
+.mission-vision h2 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: black;
+}
+
+.mission-vision p {
+    font-size: 1.2em;
+    color: #444;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* What We Do Section */
+.what-we-offer {
+    padding: 40px;
+    background-color: #f5f5f5;
+}
+
+.content-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.text-content {
+    flex: 1;
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+.text-content h2 {
+    font-size: 2rem;
+    color: blue;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.text-content p {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.text-content ul {
+    list-style-type: decimal;
+    
+    padding-right: 10px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #555;
+}
+
+.text-content ul li {
+    margin-bottom: 10px;
+}
+
+.download-link {
+    display: inline-block;
+    background-color: blue;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+
+.download-link:hover {
+    background-color: skyblue;
+    transition: background-color 0.3s ease;
+}
+
+.image-content {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image-content img {
+    max-width: auto;
+    height: 350px;
+    border-radius: 5px;
+}
+
+
+/* Footer Section */
+footer {
+    background-color: rgb(207, 163, 207);
+    color: black;
+    padding: 20px 10px;
+    margin-top: auto; 
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.footer-column {
+    flex: 1;
+    padding: 0 15px;
+}
+
+.footer-column h2 {
+    margin-bottom: 15px;
+    color: black;
+    text-align: left;
+}
+
+.footer-column p,
+.footer-column ul {
+    margin-bottom: 10px;
+    font-size: 0.95em;
+    text-align: left;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.footer-column ul li {
+    margin-bottom: 5px;
+}
+
+.footer-column ul li a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+    color: rgb(187, 7, 187); 
+    transition: color 0.3s ease;
+}
+
+.footer-note {
+    background-color: violet;
+    border-top: 1px solid #777;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 0.85em;
+    bottom: 0;
+    position: relative;
+}
+
+/* Hamburger Menu (Initially Hidden) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    margin: 2px 0;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    /* Hide nav-links and show hamburger menu */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 100px;
+        left: 0;
+        background-color: whitesmoke;
+        width: 100%;
+        z-index: 1000;
+        padding: 10px 0px;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+        margin-right: 20px; /* Adjust as needed */
+    }
+
+    .nav-links li {
+        text-align: center;
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    /* Adjust header logo size */
+    .logo img {
+        height: 80px;
+        width: 80px;
+    }
+
+    .company-name .main-name {
+        font-size: 20px;
+    }
+
+    header {
+        height: 70px;
+    }
+
+    .social-links{
+        display: inline-flex;
+    }
+
+    .contact-info {
+        margin-top: 2px;
+        display: block;
+    }
+
+    .about-content{
+        flex-direction:column;
+    }
+    .about-content .texts-content p{
+        font-size: 1.2rem;
+        text-align: left;
+        width: 100%;
+    }
+    
+    .our-value-proposition .reason {
+        width: 45%; /*fits two per row */
+        margin-bottom: 20px;
+    }
+
+    .mission-vision {
+        flex-direction: column; 
+    }
+
+    .mission-vision .mission,
+    .mission-vision .core-values,
+    .mission-vision .vision {
+        border: none; /* Removes borders on mobile */
+        padding: 20px 0;
+    }
+
+    .text-content, .image-content {
+        max-width: 100%; 
+        padding: 0;
+        margin-top:10px;
+    }
+
+    .text-content ul {
+        text-align: left;
+    }
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        padding: 10px 0;
+    }
+}
+
+
