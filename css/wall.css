@@ -196,7 +196,7 @@ main {
 /* Hero Section */
 .hero-section {
     position: relative;
-    height: 65vh;
+    height: 75vh;
     background-color: #f0f0f0; 
     overflow: hidden;
 }
@@ -230,85 +230,54 @@ main {
     margin-bottom: 10px;
 }
 
-/* Flooring section */
-.flooring-content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 50px;
-    background-color: white;
+/* wall section */
+.wall-content {
+    display: block;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.flooring-content img.flooring-image {
-    width: auto;
-    height: 300px;
-    border-radius: 4px;
-    margin-top: auto;
+
+.text-content {
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
-.flooring-content img.polyuthane-image {
-    width: 650px;
-    height: 250px;
-    border-radius: 4px;
-    margin-top: auto;
+.text-content h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 16px;
+    text-align: center;
 }
 
-.flooring-content div.text-content {
-    padding-left: 50px;
-}
-
-.flooring-content h2 {
-    font-size: 2em;
-    color: #2c3e50; 
+.text-content h3 {
+    font-size: 22px;
+    color: #34495e;
     margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
     text-align: left;
 }
 
+.text-content ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
 
-.flooring-content p {
-    font-size: 1.2em;
-    color: #555;
-    line-height: 1.2;
+.text-content ul li {
+    font-size: 16px;
     margin-bottom: 10px;
-    text-align: left;
 }
 
-/* Epoxy section */
-.epoxy-content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 30px;
-    background-color: white;
-    margin-bottom: 20px;
-    margin-top: 20px;
-}
-
-.epoxy-content img.epoxy-image {
-    width: auto;
-    height: 300px;
-    border-radius: 4px;
-    margin-top: auto;
-}
-
-.epoxy-content div.text-content {
-    padding-right: 30px;
-}
-
-.epoxy-content h2 {
-    font-size: 2em;
-    color: #2c3e50; 
-    margin-bottom: 10px;
-    text-align: left;
-}
-
-
-.epoxy-content p {
-    font-size: 1.2em;
-    color: #555;
-    line-height: 1.2;
-    margin-bottom: 10px;
-    text-align: left;
+.text-content strong {
+    color: #2980b9;
 }
 
 /* Footer */
@@ -365,46 +334,47 @@ footer {
         width: 100%;
         margin: 10px 0;
     }
-/* Dropdown Content*/
-.dropbtn {
-    color: black;
-    padding: 14px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
-    background-color: transparent;
-    width: 100%;
-}
 
-.dropdown-content {
-    display: none; 
-    position: relative; 
-    left: 0; 
-    top: 100%; 
-    width: 100%; 
-    z-index: 1;
-}
+    /* Dropdown Content*/
+    .dropbtn {
+        color: black;
+        padding: 14px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        width: 100%;
+    }
 
-.dropdown-content a {
-    padding: 2px 2px;
-    font-size: 14px;
-    text-align: center;
-    border: none;
-    width: 100%; 
-    display: block;
-    font-size: 14px;
-    box-sizing: border-box; 
-}
+    .dropdown-content {
+        display: none; 
+        position: relative; 
+        left: 0; 
+        top: 100%; 
+        width: 100%; 
+        z-index: 1;
+    }
 
-.dropdown:hover .dropdown-content {
-    display: block;
-    position: static; 
-    background-color: whitesmoke;
-    width: 100%; 
-    margin-top: 2px;
-    box-shadow: none; 
-    padding: 0;
-}
+    .dropdown-content a {
+        padding: 2px 2px;
+        font-size: 14px;
+        text-align: center;
+        border: none;
+        width: 100%; 
+        display: block;
+        font-size: 14px;
+        box-sizing: border-box; 
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        position: static; 
+        background-color: whitesmoke;
+        width: 100%; 
+        margin-top: 2px;
+        box-shadow: none; 
+        padding: 0;
+    }
 
     /* Adjust header logo size */
     .logo img {
@@ -416,7 +386,7 @@ footer {
         font-size: 20px;
     }
     header {
-        height: 70px;
+        height: 65px;
     }
 
     .social-links{
@@ -427,13 +397,25 @@ footer {
         margin-top: 2px;
         display: block;
     }
-    .flooring-content,
-    .epoxy-content {
+    /* wall section */
+    .wall-content {
         flex-direction: column;
     }
-    .flooring-content img.polyuthane-image,
-    .epoxy-content img.epoxy-image,
-    .flooring-content img.flooring-image {
+
+    .text-content {
         width: 100%;
+    }
+
+    .text-content h2 {
+        font-size: 24px;
+    }
+
+    .text-content h3 {
+        font-size: 20px;
+    }
+
+    .text-content p,
+    .text-content ul li {
+        font-size: 14px;
     }
 }

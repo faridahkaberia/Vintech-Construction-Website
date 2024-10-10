@@ -201,7 +201,7 @@ main {
 .hero-section {
     position: relative;
     height: 65vh;
-    background-color: #f0f0f0; /* Fallback color */
+    background-color: #f0f0f0; 
     overflow: hidden;
 }
 
@@ -234,39 +234,54 @@ main {
     margin-bottom: 10px;
 }
 
-/* Flooring section */
+/* app section */
 .app-content {
-    display: flex;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding: 50px;
-    background-color: white;
+    display: block;
+    margin: 40px 0;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.app-content img.app-image {
-    width: auto;
-    height: 300px;
-    border-radius: 4px;
-    margin-top: auto;
+
+.text-content {
+    font-family: 'Arial', sans-serif;
+    color: #333;
 }
 
-.app-content div.text-content {
-    padding-left: 50px;
+.text-content h2 {
+    font-size: 28px;
+    color: #2c3e50;
+    margin-bottom: 16px;
+    text-align: center;
 }
 
-.app-content h2 {
-    font-size: 2em;
-    color: #2c3e50; 
+.text-content h3 {
+    font-size: 22px;
+    color: #34495e;
     margin-bottom: 10px;
+}
+
+.text-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 16px;
     text-align: left;
 }
 
-.app-content p {
-    font-size: 1.2em;
-    color: #555;
-    line-height: 1.2;
+.text-content ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+.text-content ul li {
+    font-size: 16px;
     margin-bottom: 10px;
-    text-align: left;
+}
+
+.text-content strong {
+    color: #2980b9;
 }
 
 /* Footer */
@@ -315,13 +330,54 @@ footer {
 
     .hamburger {
         display: flex;
-        margin-right: 20px; /* Adjust as needed */
+        margin-right: 20px; 
     }
 
     .nav-links li {
         text-align: center;
         width: 100%;
         margin: 10px 0;
+    }
+
+    /* Dropdown Content*/
+    .dropbtn {
+        color: black;
+        padding: 14px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        background-color: transparent;
+        width: 100%;
+    }
+
+    .dropdown-content {
+        display: none; 
+        position: relative; 
+        left: 0; 
+        top: 100%; 
+        width: 100%; 
+        z-index: 1;
+    }
+
+    .dropdown-content a {
+        padding: 2px 2px;
+        font-size: 14px;
+        text-align: center;
+        border: none;
+        width: 100%; 
+        display: block;
+        font-size: 14px;
+        box-sizing: border-box; 
+    }
+
+    .dropdown:hover .dropdown-content {
+        display: block;
+        position: static; 
+        background-color: whitesmoke;
+        width: 100%; 
+        margin-top: 2px;
+        box-shadow: none; 
+        padding: 0;
     }
 
     /* Adjust header logo size */
@@ -338,17 +394,33 @@ footer {
     }
 
     .social-links{
-        display: inline-block;
+        display: inline-flex;
     }
 
     .contact-info {
         margin-top: 2px;
         display: block;
     }
+
+    /* app section */
     .app-content {
         flex-direction: column;
     }
-    .app-content img.app-image {
-        width: 70%;
+
+    .text-content {
+        width: 100%;
+    }
+
+    .text-content h2 {
+        font-size: 24px;
+    }
+
+    .text-content h3 {
+        font-size: 20px;
+    }
+
+    .text-content p,
+    .text-content ul li {
+        font-size: 16px;
     }
 }
