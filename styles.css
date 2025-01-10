@@ -229,6 +229,26 @@ h2 {
     opacity: 1;
 } 
 
+.hero-slide .hero-text h1, 
+.hero-slide .hero-text p {
+    opacity: 0;
+    transform: translateX(-100px); /* Start off to the left */
+    transition: all 1s ease;
+}
+
+.hero-slide.active .hero-text h1, 
+.hero-slide.active .hero-text p {
+    opacity: 1;
+    transform: translateX(0); /* Slide to normal position */
+}
+
+.hero-text h1.slide-in-text, 
+.hero-text p.slide-in-text {
+    opacity: 1;
+    transform: translateX(0);
+}
+
+
 /* About Vintech */
 .about-vintech {
     padding: 40px;

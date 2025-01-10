@@ -42,6 +42,37 @@ document.addEventListener("DOMContentLoaded", function () {
     showSlide(currentSlide);
     setInterval(nextSlide, 5000);
 
+    //hero-text
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            const textElements = slide.querySelectorAll('.hero-text h1, .hero-text p');
+            slide.classList.remove('active', 'slide-in');
+            textElements.forEach(text => {
+                text.classList.remove('slide-in-text', 'from-top', 'from-bottom', 'from-left', 'from-right');
+            });
+    
+            if (i === index) {
+                slide.classList.add('active');
+                setTimeout(() => {
+                    slide.classList.add('slide-in');
+                    textElements.forEach(text => {
+                        const randomDirection = getRandomDirection(); // Get random direction
+                        setTimeout(() => {
+                            text.classList.add('slide-in-text', randomDirection);
+                        }, 200); // Delay before starting animation
+                    });
+                }, 50);
+            }
+        });
+    }
+    
+    function getRandomDirection() {
+        const directions = ['from-top', 'from-bottom', 'from-left', 'from-right'];
+        const randomIndex = Math.floor(Math.random() * directions.length);
+        return directions[randomIndex];
+    }    
+
+    //searchbutton
     (function() {
         // Get the search input and product items
         const searchInput = document.querySelector('.search-container input[name="search"]');
