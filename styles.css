@@ -105,7 +105,7 @@ header {
 nav {
     background-color: whitesmoke;
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
     width: 100%;
     position: fixed;
     z-index: 99;
@@ -196,7 +196,7 @@ h2 {
 .hero-slideshow {
     position: relative;
     max-width: 100%;
-    height: 100vh;
+    height: 90vh;
     overflow: hidden;
 }
 
@@ -219,12 +219,15 @@ h2 {
     bottom: 20%;
     left: 50%;
     transform: translateX(-50%);
-    color: white;
+    color: whitesmoke;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
 }
 
+.hero-text h1 {
+    font-size: 2em;
+}
 .hero-slide.active {
     opacity: 1;
 } 
@@ -232,14 +235,14 @@ h2 {
 .hero-slide .hero-text h1, 
 .hero-slide .hero-text p {
     opacity: 0;
-    transform: translateX(-100px); /* Start off to the left */
+    transform: translateX(-100px); 
     transition: all 1s ease;
 }
 
 .hero-slide.active .hero-text h1, 
 .hero-slide.active .hero-text p {
     opacity: 1;
-    transform: translateX(0); /* Slide to normal position */
+    transform: translateX(0);
 }
 
 .hero-text h1.slide-in-text, 
@@ -839,8 +842,8 @@ footer {
 }
 
 .footer-note {
-    background-color: violet;
-    border-top: 1px solid #777;
+    background-color: rgb(207, 163, 207);
+    border-top: 1px solid black;
     padding-top: 10px;
     text-align: center;
     font-size: 0.85em;
@@ -938,6 +941,9 @@ footer {
         z-index: 1000;
         padding: 10px 0;
     }
+     nav {
+        margin-top: 35px;
+     }
 
     .nav-links.active {
         display: flex;

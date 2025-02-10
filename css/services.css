@@ -106,7 +106,7 @@ header {
 nav {
     background-color: whitesmoke;
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
     width: 100%;
     position: fixed;
     z-index: 99;
@@ -335,6 +335,9 @@ footer {
 
     .nav-links.active {
         display: flex;
+    }
+    nav {
+        margin-top: 40px;
     }
 
     .hamburger {

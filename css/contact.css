@@ -106,7 +106,7 @@ header {
 nav {
     background-color: whitesmoke;
     padding: 10px;
-    margin-top: 40px;
+    margin-top: 20px;
     width: 100%;
     position: fixed;
     z-index: 99;
@@ -366,8 +366,8 @@ footer {
 }
 
 .footer-note {
-    background-color: violet;
-    border-top: 1px solid #777;
+    background-color: rgb(207, 163, 207);
+    border-top: 1px solid black;
     padding-top: 10px;
     text-align: center;
     font-size: 0.85em;
@@ -440,6 +440,9 @@ footer {
 
     .nav-links.active {
         display: flex;
+    }
+    nav {
+        margin-top: 40px;
     }
 
     .hamburger {
