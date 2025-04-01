@@ -246,15 +246,8 @@ main {
     margin-top: auto;
 }
 
-.flooring-content img.polyuthane-image {
-    width: 650px;
-    height: 250px;
-    border-radius: 4px;
-    margin-top: auto;
-}
-
 .flooring-content div.text-content {
-    padding-left: 50px;
+    padding-right: 30px;
 }
 
 .flooring-content h2 {

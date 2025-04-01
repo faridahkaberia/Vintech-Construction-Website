@@ -275,19 +275,17 @@ main {
 }
 
 .texts-content h1 {
-    font-size: 2.2em;
+    font-size: 2em;
     color: blue;
     margin-bottom: 10px;
 }
 
-
 .texts-content p {
-    font-size: 1.2em;
-    color: #7e7c7c;
+    font-size: 1em;
+    color: #666;
     line-height: 1.2;
     margin-bottom: 1px;
     text-align: left;
-    
 }
 
 
@@ -407,7 +405,6 @@ main {
 
 .text-content ul {
     list-style-type: decimal;
-    
     padding-right: 10px;
     line-height: 1.6;
     margin-bottom: 20px;
@@ -629,7 +626,12 @@ footer {
         text-align: left;
         width: 100%;
     }
-    
+    .about-content img.about-image {
+        width: 400px;
+        height: 350px;
+        border-radius: 4px;
+        margin-top: 12vh;
+    }
     .our-value-proposition .reason {
         width: 50%; 
         margin-bottom: 20px;
