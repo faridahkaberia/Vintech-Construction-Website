@@ -19,7 +19,7 @@ p {
 }
 /* Header */
 header {
-    background-color: violet;
+    background-color: navy;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -67,7 +67,7 @@ header {
 
 .company-name {
     font-weight: bold;
-    color: blue;
+    color: rgb(9, 65, 204);
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -84,6 +84,7 @@ header {
 .contact-info p {
     margin: 0 15px;
     font-size: 14px;
+    color: white;
 }
 
 .social-links a {
@@ -125,7 +126,7 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(187, 7, 187); 
+    color: blue; 
     transition: color 0.3s ease;
 }
 
@@ -227,6 +228,7 @@ h2 {
 
 .hero-text h1 {
     font-size: 2em;
+    color: wheat;
 }
 .hero-slide.active {
     opacity: 1;
@@ -272,7 +274,7 @@ h2 {
 
 .text-content h2 {
     font-size: 1.5rem;
-    color: blue;
+    color: navy;
     margin-bottom: 10px;
     text-align: left;
 }
@@ -285,7 +287,7 @@ h2 {
 
 .see-more {
     display: inline-block;
-    background-color: blue;
+    background-color: navy;
     color: #fff;
     padding: 10px 20px;
     text-decoration: none;
@@ -293,7 +295,7 @@ h2 {
     margin-top: 20px;
 } 
 .see-more:hover {
-    background-color: skyblue;
+    background-color: blue;
     transition: background-color 0.3s ease;
 }
 .image-content {
@@ -435,6 +437,7 @@ h2 {
     font-size: 2em;
     margin-bottom: 10px;
     font-weight: bold;
+    color: wheat;
 }
 
 .overlay-text p {
@@ -484,7 +487,7 @@ h2 {
 }
 
 .tab.active {
-    background-color: rgb(8, 8, 245);
+    background-color: navy;
     color: white;
 }
 
@@ -511,7 +514,7 @@ h2 {
 }
 
 #prev-arrow, #next-arrow {
-    background-color: #479df8;
+    background-color: navy;
     color: white;
     padding: 10px;
     border: none;
@@ -664,7 +667,7 @@ h2 {
 }
 
 .stat {
-    background-color: violet;
+    background-color: navy;
     border-radius: 50%; 
     width: 250px;
     height: 250px;
@@ -685,6 +688,7 @@ h2 {
     display: flex;
     flex-direction: column;
     text-align: center;
+    color: white;
 }
 
 .stat h3 i {
@@ -700,7 +704,7 @@ h2 {
 
 .stat-icon {
     font-size: 30px;
-    color: black;
+    color: wheat;
 }
 
 /* Partners Section */
@@ -791,7 +795,7 @@ h2 {
 }
 /* Footer Section */
 footer {
-    background-color: rgb(207, 163, 207);
+    background-color: navy;
     color: black;
     padding: 20px 10px;
     margin-top: auto; 
@@ -811,7 +815,7 @@ footer {
 
 .footer-column h2 {
     margin-bottom: 15px;
-    color: black;
+    color: wheat;
     text-align: left;
 }
 
@@ -820,6 +824,7 @@ footer {
     margin-bottom: 10px;
     font-size: 0.95em;
     text-align: left;
+    color: white;
 }
 
 .footer-column ul {
@@ -832,7 +837,7 @@ footer {
 }
 
 .footer-column ul li a {
-    color: black;
+    color: white;
     text-decoration: none;
 }
 
@@ -842,13 +847,16 @@ footer {
 }
 
 .footer-note {
-    background-color: rgb(207, 163, 207);
-    border-top: 1px solid black;
+    background-color: navy;
+    border-top: 1px solid white;
     padding-top: 10px;
     text-align: center;
     font-size: 0.85em;
     bottom: 0;
     position: relative;
+}
+.footer-note p {
+    color: white;
 }
     
 /* Back to Top Arrow */

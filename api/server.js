@@ -22,7 +22,7 @@ const transporter = nodemailer.createTransport({
 });
 
 // Single route handler for all pages
-app.get(['/', '/about', '/services', '/shop', '/projects', '/contact', '/flatroof', '/basement', '/flooring', '/app-membrane', '/water-retention', '/wall', '/consultancy', '/supply&delivery'], (req, res) => {
+app.get(['/', '/about', '/services', '/shop', '/projects', '/contact', '/flatroof', '/basement', '/flooring', '/app-membrane', '/water-retention', '/wall', '/consultancy', '/supply&delivery', '/thank_you' ], (req, res) => {
     const page = req.path === '/' ? 'index.html' : req.path.slice(1) + '.html';
     res.sendFile(path.join(__dirname, '../', page));
 });

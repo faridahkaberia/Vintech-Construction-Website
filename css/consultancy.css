@@ -19,7 +19,7 @@ p {
 }
 /* Header */
 header {
-    background-color: violet;
+    background-color: navy;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -36,6 +36,7 @@ header {
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    color: white;
 }
 
 .logo {
@@ -67,7 +68,7 @@ header {
 
 .company-name {
     font-weight: bold;
-    color: blue;
+    color: rgb(9, 65, 204);
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -126,7 +127,7 @@ nav a {
 }
 
 nav a:hover {
-    color: rgb(187, 7, 187); 
+    color: blue; 
     transition: color 0.3s ease;
 }
 
@@ -174,7 +175,6 @@ nav a:hover {
     border-bottom: 1px solid grey; 
 }
 
-
 .dropdown-content a:hover {
     background-color: lightgreen;
 }
@@ -184,8 +184,6 @@ nav a:hover {
     display: block;
     width: 180%;
 }
-
-
 
 /* Main Content Section */
 main {
@@ -240,7 +238,6 @@ main {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-
 .text-content {
     font-family: 'Arial', sans-serif;
     color: #333;
@@ -248,14 +245,14 @@ main {
 
 .text-content h2 {
     font-size: 28px;
-    color: #2c3e50;
+    color: navy;
     margin-bottom: 16px;
     text-align: center;
 }
 
 .text-content h3 {
     font-size: 22px;
-    color: #34495e;
+    color: navy;
     margin-bottom: 10px;
 }
 
@@ -277,7 +274,7 @@ main {
 }
 
 .text-content strong {
-    color: #2980b9;
+    color: rgb(46, 63, 105);
 }
 
 @media (max-width: 768px) {
@@ -305,12 +302,15 @@ main {
 
 /* Footer */
 footer {
-    background-color: violet;
+    background-color: navy;
     color: black;
     padding: 10px;
     text-align: center;
     margin-top: 20px;
     font-size: 0.85em;
+}
+footer p {
+    color: white;
 }
 
 /* Hamburger Menu (Initially Hidden) */

@@ -23,7 +23,7 @@ body {
 
 /* Header */
 header {
-    background-color: violet;
+    background-color: navy;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -40,6 +40,7 @@ header {
     justify-content: space-between;
     width: 100%;
     align-items: center;
+    color: white;
 }
 
 .logo {
@@ -71,7 +72,7 @@ header {
 
 .company-name {
     font-weight: bold;
-    color: blue;
+    color: rgb(9, 65, 204);
     margin: 0;
     display: flex;
     flex-direction: column;
@@ -127,7 +128,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: rgb(187, 7, 187); 
+    color: blue; 
     transition: color 0.3s ease;
 }
 
@@ -142,7 +143,6 @@ nav {
     background-color: transparent;
     font-size: 1em;
 }
-
 
 .nav-links .dropdown {
     position: relative;
@@ -166,7 +166,7 @@ nav {
 }
 
 .nav-links .p-dropdown-content a:hover {
-    background-color: violet;
+    background-color: lightgreen;
 }
 .nav-links .dropdown:hover .p-dropdown-content {
     display: block;
@@ -277,7 +277,7 @@ nav {
 .product-item .btn {
     display: inline-block;
     padding: 5px 3px;
-    background-color: #4873a1;
+    background-color: navy;
     color: white;
     text-decoration: none;
     margin: 5px;
@@ -285,12 +285,11 @@ nav {
 }
 
 .product-item .order-btn {
-    background-color: #67a375;
+    background-color: #4CAF5D;
 }
 
 .product-item .btn:hover, .order-btn:hover {
     opacity: 0.5;
-    
 }
 
 .button-container {
@@ -320,13 +319,13 @@ nav {
 
 .modal-content h3 {
     margin-top: 0;
-    color: #4d0de2;
+    color: navy;
 }
 .modal-content p {
     color: #333;
 }
 .close {
-    color: #838285;
+    color: darkslategrey;
     float: right;
     font-size: 28px;
     font-weight: bold;
@@ -335,7 +334,7 @@ nav {
 
 .close:hover,
 .close:focus {
-    color: black;
+    color: red;
     text-decoration: none;
     cursor: pointer;
 }
@@ -345,7 +344,7 @@ nav {
 
 /* Footer */
 footer {
-    background-color: violet;
+    background-color: navy;
     color: black;
     padding: 10px;
     text-align: center;
@@ -354,6 +353,9 @@ footer {
     bottom: 0;
     width: 100%;
     margin-top: 8%;
+}
+footer p {
+    color: white;
 }
 
 /* Hamburger Menu (Initially Hidden) */
