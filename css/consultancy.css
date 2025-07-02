@@ -87,6 +87,9 @@ header {
     margin: 0 15px;
     font-size: 14px;
 }
+.contact-info p a {
+    color: white;
+}
 
 .social-links a {
     display: inline-block;

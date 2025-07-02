@@ -87,6 +87,9 @@ header {
     font-size: 14px;
     color: white;
 }
+.contact-info p a {
+    color: white;
+}
 
 .social-links a {
     display: inline-block;
@@ -472,6 +475,9 @@ footer {
     margin-bottom: 10px;
     font-size: 0.95em;
     text-align: left;
+    color: white;
+}
+.footer-column p a {
     color: white;
 }
 
