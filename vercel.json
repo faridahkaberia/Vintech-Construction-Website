@@ -1,0 +1,16 @@
+{
+  "redirects": [
+    {
+      "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "vintechwaterproofing.vercel.app"
+        }
+      ],
+      "destination": "https://vintechwaterproofing.co.ke/:1",
+      "permanent": true
+    }
+  ]
+}
+
