@@ -10,6 +10,15 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="images/favicon.png" type="image/png">
+    <!-- Structured Data for Site Name -->
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Website",
+            "name": "Vintech Construction Waterproofing",
+            "url": "https://vintechwaterproofing.co.ke/"
+        }
+    </script>
 </head>
 
 <body>
@@ -45,6 +54,7 @@
             <div class="nav-links">
                 <a href="index.html">Home</a>
                 <a href="about.html">About Us</a>
+                <a href="roofing.html">Roofing Solutions</a>
                 <div class="dropdown">
                     <a href="services.html" class="dropbtn">Our Services <i class="fa fa-caret-down"></i></a>
                     <div class="dropdown-content">
@@ -67,6 +77,13 @@
     
 
     <section class="hero-slideshow">
+        <div class="hero-slide">
+            <img src="images/decra stone.png" alt="roofing solutions">
+            <div class="hero-text">
+                <h1>Roofing Solutions</h1>
+                <p>Decra stone coated steel, Tile effect sheets, Box profile, Alluminum, Polycarbonate & Corragated iron sheets</p>
+            </div>
+        </div>
         <div class="hero-slide">
             <img src="hero_images/appmembrane.jpeg" alt="appmembrane installation">
             <div class="hero-text">
@@ -117,7 +134,7 @@
             </div>
         </div>
         <div class="hero-slide">
-            <img src="products_images/Uniproof 4000.jpeg" alt="supply & delivery">
+            <img src="hero_images/S&D.jpeg" alt="supply & delivery">
             <div class="hero-text">
                 <h1>Supply & Delivery</h1>
                 <p>Supply and delivery of waterproofing, flooring & roofing materials.</p>
@@ -147,14 +164,19 @@
             
             <div class="product-carousel">
                 <div class="product-category">
+                    <img src="services_images/decra.jpeg" alt="roofing-materials">
+                    <h3>Roofing Materials</h3>
+                    <a href="roofing.html" class="view-more">Learn More</a>
+                </div>
+                <div class="product-category">
                     <img src="products_images/appmembrane.jpeg" alt="appmembrane">
                     <h3>Waterproofing</h3>
-                    <a href="shop.html" class="view-more">Learn More</a>
+                    <a href="shop.html#waterproofing" class="view-more">Learn More</a>
                 </div>
                 <div class="product-category">
                     <img src="products_images/polyplus-cp.png" alt="admixtures">
                     <h3>Admixtures</h3>
-                    <a href="shop.html" class="view-more">Learn More</a>
+                    <a href="shop.html#admixtures" class="view-more">Learn More</a>
                 </div>
                 <div class="product-category">
                     <img src="products_images/Adisilex PG4.jpeg" alt="concrete-repair">
@@ -191,11 +213,6 @@
                     <h3>Epoxy Flooring</h3>
                     <a href="shop.html" class="view-more">Learn More</a>
                 </div>
-                <div class="product-category">
-                    <img src="services_images/decra.jpeg" alt="roofing-materials">
-                    <h3>Roofing Materials</h3>
-                    <a href="shop.html" class="view-more">Learn More</a>
-                </div>
             </div>
         </section>
 
@@ -206,56 +223,6 @@
                 <p>Where durability meets reliability.</p>
             </div>
         </section>        
-
-        <!-- Waterproofing methods section -->
-        <section id="waterproofing-methods">
-            <h2>Waterproofing Methods</h2>
-        
-            <div class="arrow-controls">
-                <button id="prev-arrow">◀</button>
-                <button id="next-arrow">▶</button>
-            </div>
-        
-            <div class="tab-container">
-                <button class="tab active" data-content="cementitious">Cementitious Waterproofing</button>
-                <button class="tab" data-content="liquid-membrane">Liquid Membrane Waterproofing</button>
-                <button class="tab" data-content="bituminous">Bituminous Coating Waterproofing</button>
-                <button class="tab" data-content="app-membrane">APP Membrane</button>
-                <button class="tab" data-content="injection-grouting">Injection Grouting</button>
-                <button class="tab" data-content="crystalline">Crystalline Waterproofing</button>
-            </div>
-        
-            <!-- Tab Content -->
-            <div id="cementitious" class="tab-content active">
-                <p>Cementitious waterproofing involves the application of cement-based compounds to create a waterproof barrier. Used for water retaining structures like water tanks and basements.</p>
-                <p>Easy to apply, cost-effective, and provides a strong durable barrier.</p>
-            </div>
-        
-            <div id="liquid-membrane" class="tab-content">
-                <p>A liquid-applied membrane made from materials like polyurethane or acrylic, forming a seamless, flexible coating. Often used on flat roofs and balconies.</p>
-                <p>Provides a seamless finish, adaptable to complex surfaces, and highly flexible.</p>
-            </div>
-        
-            <div id="bituminous" class="tab-content">
-                <p>Also known as asphalt coating, a black tar-like substance used to coat surfaces to create a protective barrier. It's mainly used on foundations and basement walls.</p>
-                <p>Excellent adhesion to various surfaces and good resistance to water.</p>
-            </div>
-        
-            <div id="app-membrane" class="tab-content">
-                <p>A type of bitumen membrane reinforced with polymers, used for waterproofing flat and sloped roofs. It provides flexibility and durability under extreme weather conditions.</p>
-                <p>UV resistant, flexible, and durable.</p>
-            </div>
-        
-            <div id="injection-grouting" class="tab-content">
-                <p>Uses a fluid-like material injected into cracks or porous structures to fill gaps and stop water ingress. Used to repair leaks in concrete structures, tunnels, and underground basements.</p>
-                <p>Targets specific problematic areas, easy to apply in confined spaces.</p>
-            </div>
-        
-            <div id="crystalline" class="tab-content">
-                <p>Uses chemical treatments to penetrate concrete, react with water and calcium to form crystals that block pores and cracks. Used for basements, water tanks, and other underground structures.</p>
-                <p>Seals cracks over time and is highly effective in high-moisture areas.</p>
-            </div>
-        </section>
         
         <!-- Services Section -->
         <section class="services-section">
