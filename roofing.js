@@ -48,6 +48,64 @@ indicators.forEach((indicator, index) => {
         console.error('Hamburger or nav-links elements not found.');
     }
 
+// Category Dropdown Functionality
+const categoryBtn = document.getElementById('categoryBtn');
+const categoryDropdown = document.getElementById('categoryDropdown');
+const categoryLinks = document.querySelectorAll('.category-list a');
+const showAllBtn = document.getElementById('showAllBtn');
+const productCards = document.querySelectorAll('.product-card');
+
+// Toggle dropdown
+categoryBtn.addEventListener('click', () => {
+    categoryBtn.classList.toggle('active');
+    categoryDropdown.classList.toggle('active');
+});
+
+// Close dropdown when clicking outside
+document.addEventListener('click', (e) => {
+    if (!e.target.closest('.category-filter')) {
+        categoryBtn.classList.remove('active');
+        categoryDropdown.classList.remove('active');
+    }
+});
+
+// Filter products by category
+categoryLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const category = link.getAttribute('data-category');
+        
+        productCards.forEach(card => {
+            if (card.getAttribute('data-category') === category) {
+                card.classList.remove('hidden');
+            } else {
+                card.classList.add('hidden');
+            }
+        });
+        
+        // Close dropdown
+        categoryBtn.classList.remove('active');
+        categoryDropdown.classList.remove('active');
+        
+        // Update button text
+        categoryBtn.querySelector('span').textContent = link.textContent;
+    });
+});
+
+// Show all products
+showAllBtn.addEventListener('click', () => {
+    productCards.forEach(card => {
+        card.classList.remove('hidden');
+    });
+    
+    // Close dropdown
+    categoryBtn.classList.remove('active');
+    categoryDropdown.classList.remove('active');
+    
+    // Reset button text
+    categoryBtn.querySelector('span').textContent = 'Filter by Category';
+});
+
 // Product Details Data
 const productDetails = {
     'decra': {
@@ -69,7 +127,7 @@ const productDetails = {
 
     'decra-shingle': {
         name: 'Decra Shingle Tile',
-        price: 'From KSh 0/sqm',
+        price: 'From KSh 750/piece',
         description: 'Decra Shingle captures the distinctive charm of traditional wood shake shingles without the maintenance headaches. This premium stone-coated profile delivers rustic elegance with modern durability.',
         features: [
             'Authentic wood shake appearance',
@@ -86,7 +144,7 @@ const productDetails = {
 
     'decra-slate': {
         name: 'Decra Slate Tile',
-        price: 'From KSh 0/sqm',
+        price: 'From KSh 750/piece',
         description: 'Decra Slate replicates the prestigious appearance of natural slate roofing at a fraction of the weight and cost. This elegant profile brings European sophistication to Kenyan architecture.',
         features: [
             'Authentic slate tile appearance',
@@ -103,7 +161,7 @@ const productDetails = {
 
     'decra-milano': {
         name: 'Decra Milano Tile',
-        price: 'From KSh 0/sqm',
+        price: 'From KSh 750/piece',
         description: 'Decra Milano brings Italian-inspired elegance to modern roofing. With its distinctive curved profile and rich stone coating, Milano creates the romantic appeal of Mediterranean villa roofing.',
         features: [
             'Italian villa-style curved profile',
@@ -120,7 +178,7 @@ const productDetails = {
 
     'decra-classic': {
         name: 'Decra Classic Tile',
-        price: 'From KSh 0/sqm',
+        price: 'From KSh 750/piece',
         description: 'Decra Classic represents the gold standard in stone-coated roofing. This timeless profile has protected homes worldwide for decades, combining proven performance with elegant simplicity.',
         features: [
             'Traditional tile profile design',
@@ -137,7 +195,7 @@ const productDetails = {
 
     'decra-shake': {
         name: 'Decra Shake Tile',
-        price: 'From KSh 0/sqm',
+        price: 'From KSh 750/piece',
         description: 'Decra Shake delivers the most authentic wood shake appearance in the stone-coated roofing industry. This premium profile features deep shadow lines and natural texture that rivals genuine cedar shakes.',
         features: [
             'Ultra-realistic wood shake texture',
@@ -252,7 +310,7 @@ const productDetails = {
 },
 
 'Versatile': {
-    name: 'Versatile Roofing Tiles',
+    name: 'Versatile Roofing',
     price: 'From KSh 0/sqm',
     description: 'Versatile tiles live up to their name, offering flexible design options that complement any architectural style. This adaptable stone-coated roofing solution combines aesthetic versatility with robust performance.',
     features: [
@@ -313,7 +371,7 @@ document.querySelectorAll('.btn-read-more').forEach(button => {
                 <p>${product.benefits}</p>
                 
                 <div style="margin-top: 30px; text-align: center;">
-                    <a href="https://wa.me/254YOUR_NUMBER?text=I%20would%20like%20to%20learn%20more%20about%20${encodeURIComponent(product.name)}" 
+                    <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20learn%20more%20about%20${encodeURIComponent(product.name)}" 
                        class="btn-order" 
                        target="_blank"
                        style="display: inline-block; padding: 15px 40px; text-decoration: none;">

@@ -14,7 +14,6 @@
         <div class="header-content">
             <div class="contact-info">
                 <p><span class="icon">&#9742;</span> +254 721 478659</p>
-                <p><span class="icon">&#9993;</span> <a href="mailto:kevinmainatech@gmail.com">kevinmainatech@gmail.com</a></p>
             </div>
             <div class="social-links">
                 <a href="https://www.facebook.com/share/1BcCm87KhD/L"><img src="images/facebook.png" alt="Facebook"></a>
@@ -68,20 +67,20 @@
             <div class="hero-slide active" data-title="Decra Stone-Coated Steel (Classic, Shake, Milano, Shingle, Slate)">
                 <img src="images/decra 2.png" alt="Decra Stone Coated Tiles">
             </div>
+            <div class="hero-slide" data-title="Tile Effect Sheets (Versatile, Elegantile, Roman Tile, Orientile)">
+                <img src="images/tile effect 2.png" alt="Tile effect sheets">
+            </div>
+            <div class="hero-slide" data-title="Polycarbonate Sheets">
+                <img src="images/poly sheets 2.png" alt="Polycarbonate Sheets">
+            </div>
             <div class="hero-slide" data-title="Box Profile Roofing">
                 <img src="images/box profile.png" alt="Box Profile Roofing">
             </div>
             <div class="hero-slide" data-title="Corrugated Iron Sheets">
                 <img src="images/corrugated.png" alt="Corrugated Iron Sheets">
             </div>
-            <div class="hero-slide" data-title="Tile Effect Sheets (e.g., Versatile, Elegantile, Roman Tile, Orientile)">
-                <img src="images/tile effect.png" alt="Tile effect sheets">
-            </div>
             <div class="hero-slide" data-title="Alluminum Sheets">
-                <img src="images/alluminium sheets.png" alt="Alluminum Sheets">
-            </div>
-            <div class="hero-slide" data-title="Polycarbonate Sheets">
-                <img src="images/poly sheets 2.png" alt="Polycarbonate Sheets">
+                <img src="images/alluminum sheets.png" alt="Alluminum Sheets">
             </div>
         </div>
 
@@ -123,85 +122,357 @@
     <section class="products-section">
         <div class="products-container">
             <h2 class="section-title">Our Roofing Products</h2>
-            <div class="products-grid">
+            
+            <!-- Category Filter Dropdown -->
+            <div class="category-filter">
+                <button class="category-btn" id="categoryBtn">
+                    <span>Filter by Category</span>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+                <div class="category-dropdown" id="categoryDropdown">
+                    <div class="category-group">
+                        <h3 class="category-heading">Decra Tile Profiles</h3>
+                        <ul class="category-list">
+                            <li><a href="#" data-category="decra-shingle">Decra Shingle Tile</a></li>
+                            <li><a href="#" data-category="decra-milano">Decra Milano Tile</a></li>
+                            <li><a href="#" data-category="decra-shake">Decra Shake Tile</a></li>
+                            <li><a href="#" data-category="decra-classic">Decra Classic Tile</a></li>
+                            <li><a href="#" data-category="decra-slate">Decra Slate Tile</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="category-group">
+                        <h3 class="category-heading">Mabati</h3>
+                        <ul class="category-list">
+                            <li><a href="#" data-category="tile-effect-sheets">Tile Effect Sheets</a></li>
+                            <li><a href="#" data-category="roofing-sheets">Roofing Sheets</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="category-group">
+                        <button class="show-all-btn" id="showAllBtn">Show All Products</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="products-grid" id="productsGrid">
                 
-                <!-- Product 1: Decra Shingle -->
-                <div class="product-card">
+                <!-- Decra Shingle Products -->
+                <div class="product-card" data-category="decra-shingle">
                     <div class="product-image">
-                        <img src="images/decra shingle.jpeg" alt="Decra Shingle Tile">
+                        <img src="images/Decra Shingle - Saphire Black.jpeg" alt="Decra Shingle Saphire Black">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name">Decra Shingle Tile</h3>
-                        <p class="product-price">From KSh 0/sqm</p>
+                        <h3 class="product-name">Shingle Tile - Saphire Black</h3>
+                        <p class="product-price">From KSh 750/piece</p>
                         <div class="product-buttons">
                             <button class="btn-read-more" data-product="decra-shingle">Read More</button>
-                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Shingle%20Tiles" class="btn-order" target="_blank">Order Now</a>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Shingle%20- Saphire Black" class="btn-order" target="_blank">Order Now</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Product 2: Decra Classic -->
-                <div class="product-card">
+                <div class="product-card" data-category="decra-shingle">
                     <div class="product-image">
-                        <img src="images/decra classic.jpeg" alt="Decra Classic Tile">
+                        <img src="images/Shingle - Terracotta.jpeg" alt="Decra Shingle Terracotta">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name">Decra Classic Tile</h3>
-                        <p class="product-price">From KSh 0/sqm</p>
+                        <h3 class="product-name">Shingle Tile - Terracotta</h3>
+                        <p class="product-price">From KSh 750/piece</p>
                         <div class="product-buttons">
-                            <button class="btn-read-more" data-product="decra-classic">Read More</button>
-                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Classic%20Tiles" class="btn-order" target="_blank">Order Now</a>
+                            <button class="btn-read-more" data-product="decra-shingle">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Shingle%20- Terracotta" class="btn-order" target="_blank">Order Now</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Product 3: Decra Milano -->
-                <div class="product-card">
+                <div class="product-card" data-category="decra-shingle">
                     <div class="product-image">
-                        <img src="images/decra milano.png" alt="Decra Milano Tile">
+                        <img src="images/Shingle-Coffee Brown.png" alt="Decra Shingle Coffee Brown">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name">Decra Milano Tile</h3>
-                        <p class="product-price">From KSh 0/sqm</p>
+                        <h3 class="product-name">Shingle Tile - Coffee Brown</h3>
+                        <p class="product-price">From KSh 750/piece</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="decra-shingle">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Shingle%20- Coffee%20Brown" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="decra-shingle">
+                    <div class="product-image">
+                        <img src="images/Decra Shingle-Eclipse.jpeg" alt="Decra Shingle Eclipse">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Shingle Tile - Eclipse</h3>
+                        <p class="product-price">From KSh 750/piece</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="decra-shingle">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Shingle%20Shingle%20- Eclipse" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="decra-shingle">
+                    <div class="product-image">
+                        <img src="images/Shingle-Portland.png" alt="Decra Shingle Portland">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Shingle Tile - Portland</h3>
+                        <p class="product-price">From KSh 750/piece</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="decra-shingle">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Shingle%20Shingle%20- Portland" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decra Milano Products -->
+                <div class="product-card" data-category="decra-milano">
+                    <div class="product-image">
+                        <img src="images/milano-terracotta.png" alt="Decra Milano Terracotta">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Milano Tile - Terracotta</h3>
+                        <p class="product-price">From KSh 750/piece</p>
                         <div class="product-buttons">
                             <button class="btn-read-more" data-product="decra-milano">Read More</button>
-                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Milano%20Tiles" class="btn-order" target="_blank">Order Now</a>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Milano%20- Terracotta" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="decra-milano">
+                    <div class="product-image">
+                        <img src="images/Milano - Saphire Black.jpeg" alt="Decra Milano Saphire Black">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Milano Tile - Saphire Black</h3>
+                        <p class="product-price">From KSh 750/piece</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="decra-milano">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Milano%20- Saphire Black" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="decra-milano">
+                    <div class="product-image">
+                        <img src="images/Milano-Rosso.png" alt="Decra Milano Rosso">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Milano Tile - Rosso</h3>
+                        <p class="product-price">From KSh 750/piece</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="decra-milano">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Milano%20- Rosso" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="decra-milano">
+                    <div class="product-image">
+                        <img src="images/Milano-Coffe Brown.png" alt="Decra Milano Coffee Brown">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Milano Tile - Coffee Brown</h3>
+                        <p class="product-price">From KSh 750/piece</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="decra-milano">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Milano%20- Coffee Brown" class="btn-order" target="_blank">Order Now</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Product 4: Decra Shake -->
-                <div class="product-card">
+                <!-- Decra Classic Products -->
+                <div class="product-card" data-category="decra-classic">
                     <div class="product-image">
-                        <img src="images/decra shake.png" alt="Decra Shake Tile">
+                        <img src="images/Classic - Terracotta.jpeg" alt="Decra Classic Terracotta">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name">Decra Shake Tile</h3>
-                        <p class="product-price">From KSh 0/sqm</p>
+                        <h3 class="product-name">Classic Tile - Terracotta</h3>
+                        <p class="product-price">From KSh 750/piece</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="decra-classic">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Classic%20- Terracotta" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="decra-classic">
+                    <div class="product-image">
+                        <img src="images/Classic - Rosso.jpeg" alt="Decra Classic Rosso">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Tile - Rosso</h3>
+                        <p class="product-price">From KSh 750/piece</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="decra-classic">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Classic%20- Rosso" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="decra-classic">
+                    <div class="product-image">
+                        <img src="images/Classic - Black.jpeg" alt="Decra Classic Black">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Tile - Black</h3>
+                        <p class="product-price">From KSh 750/piece</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="decra-classic">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Classic%20- Black" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="decra-classic">
+                    <div class="product-image">
+                        <img src="images/Classic Coffee Brown.png" alt="Decra Classic Coffee Brown">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Classic Tile - Coffee Brown</h3>
+                        <p class="product-price">From KSh 750/piece</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="decra-classic">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Classic%20- Coffee Brown" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Decra Shake Products -->
+                <div class="product-card" data-category="decra-shake">
+                    <div class="product-image">
+                        <img src="images/decra shake.png" alt="Decra Shake Terracotta">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Shake Tile - Terracotta</h3>
+                        <p class="product-price">From KSh 750/piece</p>
                         <div class="product-buttons">
                             <button class="btn-read-more" data-product="decra-shake">Read More</button>
-                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Shake%20Tiles" class="btn-order" target="_blank">Order Now</a>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Shake%20- Terracotta" class="btn-order" target="_blank">Order Now</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Product 5: Decra Slate -->
-                <div class="product-card">
+                <div class="product-card" data-category="decra-shake">
                     <div class="product-image">
-                        <img src="images/decra slate.png" alt="Decra Slate Tile">
+                        <img src="images/Shake - Coffe Brown.jpeg" alt="Decra Shake Coffee Brown">
                     </div>
                     <div class="product-info">
-                        <h3 class="product-name">Decra Slate Tile</h3>
-                        <p class="product-price">From KSh 0/sqm</p>
+                        <h3 class="product-name">Shake Tile - Coffee Brown</h3>
+                        <p class="product-price">From KSh 750/piece</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="decra-shake">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Shake%20- Coffee Brown" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="decra-shake">
+                    <div class="product-image">
+                        <img src="images/Shake-Midnight Eclipse.png" alt="Decra Shake Midnight Eclipse">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Shake Tile - Midnight Eclipse</h3>
+                        <p class="product-price">From KSh 750/piece</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="decra-shake">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Shake%20- Midnight Eclipse" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="decra-shake">
+                    <div class="product-image">
+                        <img src="images/shake-rosso.png" alt="Decra Shake Rosso">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Shake Tile - Rosso</h3>
+                        <p class="product-price">From KSh 750/piece</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="decra-shake">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Shake%20- Rosso" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Decra Slate Products -->
+                <div class="product-card" data-category="decra-slate">
+                    <div class="product-image">
+                        <img src="images/decra slate.png" alt="Decra Slate Saphire Black">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Slate Tile - Saphire Black</h3>
+                        <p class="product-price">From KSh 750/piece</p>
                         <div class="product-buttons">
                             <button class="btn-read-more" data-product="decra-slate">Read More</button>
-                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Slate%20Tiles" class="btn-order" target="_blank">Order Now</a>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Decra%20Slate%20- Saphire Black" class="btn-order" target="_blank">Order Now</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Product 6: Box Profile -->
-                <div class="product-card">
+                <!-- Tile Effect Sheets -->
+                <div class="product-card" data-category="tile-effect-sheets">
+                    <div class="product-image">
+                        <img src="images/versatile.png" alt="Versatile Sheets">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Versatile Sheets</h3>
+                        <p class="product-price">From KSh 0/piece</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="Versatile">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Versatile%20Sheets" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="tile-effect-sheets">
+                    <div class="product-image">
+                        <img src="images/roman tile.png" alt="Roman Tile Sheets">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Roman Tile Sheets</h3>
+                        <p class="product-price">From KSh 0/piece</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="Roman tile">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Roman Tile%20Sheets" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="tile-effect-sheets">
+                    <div class="product-image">
+                        <img src="images/elegantile.png" alt="Elegantile Sheets">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Elegantile Sheets</h3>
+                        <p class="product-price">From KSh 0/piece</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="Elegantile">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Elegantile%20Sheets" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="product-card" data-category="tile-effect-sheets">
+                    <div class="product-image">
+                        <img src="images/orientile.png" alt="Orientile Sheets">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Orientile Sheets</h3>
+                        <p class="product-price">From KSh 0/piece</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="Orientile">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Orientile%20Sheets" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Polycarbonate -->
+                <div class="product-card" data-category="roofing-sheets">
+                    <div class="product-image">
+                        <img src="images/poly clear.jpeg"Box Profile Roofing">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-name">Polycarbonate Sheets</h3>
+                        <p class="product-price">From KSh 0/sheet</p>
+                        <div class="product-buttons">
+                            <button class="btn-read-more" data-product="polycarbonate">Read More</button>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Polycarbonate%20Sheets" class="btn-order" target="_blank">Order Now</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Box Profile Product -->
+                <div class="product-card" data-category="roofing-sheets">
                     <div class="product-image">
                         <img src="images/box profile 2.png" alt="Box Profile Roofing">
                     </div>
@@ -215,83 +486,23 @@
                     </div>
                 </div>
 
-                <!-- Product 7: Corrugated -->
-                <div class="product-card">
+                <!-- Corrugated Product -->
+                <div class="product-card" data-category="roofing-sheets">
                     <div class="product-image">
-                        <img src="images/corrugated 2.png" alt="Corrugated Iron Sheets">
+                        <img src="images/corrugated 2.png" alt="Corrugated Roofing Sheets">
                     </div>
                     <div class="product-info">
                         <h3 class="product-name">Corrugated Iron Sheets</h3>
                         <p class="product-price">From KSh 0/sheet</p>
                         <div class="product-buttons">
                             <button class="btn-read-more" data-product="corrugated">Read More</button>
-                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Corrugated%20Roofing%20Sheets" class="btn-order" target="_blank">Order Now</a>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Corrugated%20Iron%20Sheets" class="btn-order" target="_blank">Order Now</a>
                         </div>
                     </div>
                 </div>
 
-                <!-- Product 8: Versatile -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/versatile.png" alt="Versatile">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Versatile</h3>
-                        <p class="product-price">From KSh 0/sqm</p>
-                        <div class="product-buttons">
-                            <button class="btn-read-more" data-product="Versatile">Read More</button>
-                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Versatile%20Roofing%20Tiles" class="btn-order" target="_blank">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 9: Roman Tile -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/roman tile.png" alt="Roman Tile">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Roman Tile</h3>
-                        <p class="product-price">From KSh 0/sqm</p>
-                        <div class="product-buttons">
-                            <button class="btn-read-more" data-product="Roman tile">Read More</button>
-                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Roman Tile%20Roofing%20Tiles" class="btn-order" target="_blank">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 10: Elegantile -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/elegantile.png" alt="Elegantile">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Elegantile</h3>
-                        <p class="product-price">From KSh 0/sqm</p>
-                        <div class="product-buttons">
-                            <button class="btn-read-more" data-product="Elegantile">Read More</button>
-                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Elegantile%20Roofing%20Tiles" class="btn-order" target="_blank">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 11: Orientile -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/orientile.png" alt="Orientile">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Orientile</h3>
-                        <p class="product-price">From KSh 0/sqm</p>
-                        <div class="product-buttons">
-                            <button class="btn-read-more" data-product="Orientile">Read More</button>
-                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Orientile%20Roofing%20Tiles" class="btn-order" target="_blank">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Product 12: Alluminium Sheets -->
-                <div class="product-card">
+                <!-- Alluminum Product -->
+                <div class="product-card" data-category="roofing-sheets">
                     <div class="product-image">
                         <img src="images/alluminium mabati.png" alt="Alluminum Sheets">
                     </div>
@@ -300,29 +511,15 @@
                         <p class="product-price">From KSh 0/sheet</p>
                         <div class="product-buttons">
                             <button class="btn-read-more" data-product="alluminum">Read More</button>
-                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Alluminum%20Roofing%20Sheets" class="btn-order" target="_blank">Order Now</a>
+                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Alluminum%20Sheets" class="btn-order" target="_blank">Order Now</a>
                         </div>
                     </div>
                 </div>
-
-                <!-- Product 6: Polycarbonate Sheets -->
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="images/poly clear.jpeg" alt="Polycarbonate Sheets">
-                    </div>
-                    <div class="product-info">
-                        <h3 class="product-name">Polycarbonate Sheets</h3>
-                        <p class="product-price">From KSh 0/sheet</p>
-                        <div class="product-buttons">
-                            <button class="btn-read-more" data-product="polycarbonate">Read More</button>
-                            <a href="https://wa.me/254721478659?text=I%20would%20like%20to%20order%20Polycarbonate%20Roofing%20Sheets" class="btn-order" target="_blank">Order Now</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
+
+    
 
     <!-- Product Details Modal -->
     <div id="productModal" class="modal">

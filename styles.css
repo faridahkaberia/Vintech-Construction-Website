@@ -322,11 +322,154 @@ h2 {
     border-radius: 5px;
 }
 
+/* Roofing Solutions Section */
+.roofing-section {
+    position: relative;
+    min-height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 20px 0;
+
+}
+
+.roofing-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.roofing-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.roofing-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 20px;
+}
+
+.roofing-content {
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+
+.roofing-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 4px black;
+    color: navy;
+}
+
+.roofing-description {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 30px;
+    color: black;
+    font-weight: bold;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;
+}
+
+.roofing-products-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 30px;
+    text-align: left;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.products-column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    padding-bottom: 5px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.3);
+    font-weight: 600;
+    color: navy;
+}
+
+.products-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.products-column li {
+    padding: 8px 0;
+    padding-left: 20px;
+    position: relative;
+    font-size: 1.05rem;
+    line-height: 1.5;
+    color: white;
+}
+
+.products-column li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: navy;
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.roofing-cta-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    padding: 10px 20px;
+    background: white;
+    color: #667eea;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(11, 8, 173, 0.479);
+    transition: all 0.3s ease;
+    margin-top: 5px;
+}
+
+.roofing-cta-btn:hover {
+    background: #4ade80;
+    color: white;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.roofing-cta-btn i {
+    transition: transform 0.3s ease;
+}
+
+.roofing-cta-btn:hover i {
+    transform: translateX(5px);
+}
+
 /* Product categories section */
 .product-categories h2 {
     text-align: center;
     font-size: 2em; 
-    margin: 20px 0; 
+    margin: 10px 0; 
     color: navy; 
 }
 
@@ -338,10 +481,10 @@ h2 {
 
 .product-categories {
     /* overflow: hidden;  */
-    margin-bottom: 30px;
+    margin-bottom: 20px;
     text-align: center;
     width: 100%;
-    padding: 20px; 
+    padding: 10px;
 }
 .product-carousel {
     display: grid;
@@ -1025,6 +1168,59 @@ footer {
     .product-carousel {
         grid-template-columns: repeat(2, 1fr);
         gap: 15px;
+    }
+
+    .roofing-section {
+        min-height: 400px;
+        padding: 60px 0;
+    }
+
+    .roofing-heading {
+        font-size: 1.5rem;
+    }
+
+    .roofing-description {
+        font-size: 1rem;
+        margin-bottom: 5px;
+    }
+
+    .roofing-products-list {
+        grid-template-columns: 2fr 1fr;
+        gap: 5px;
+        margin-bottom: 10px;
+        max-width: 450px;
+    }
+
+    .products-column h3,
+    .products-column li::before {
+        font-size: 1rem;
+    }
+
+    .products-column li {
+        font-size: 0.8rem;
+        padding: 5px 0;
+        padding-left: 20px;
+        position: relative;
+        line-height: 0.8;
+    }
+
+    .roofing-cta-btn {
+        padding: 10px 10px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .roofing-heading {
+        font-size: 1.6rem;
+    }
+
+    .roofing-description {
+        font-size: 0.9rem;
+    }
+
+    .roofing-overlay {
+        padding: 30px 15px;
     }
 }
 
